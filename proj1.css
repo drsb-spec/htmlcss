@@ -26,8 +26,16 @@ header {
 }
 
 #icon {
-    width: 110px;
+    width: auto;
+    height: 70px;
     margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#icon img {
+    height: 100%;
+    width: auto;
 }
 
 #backtotop {
@@ -49,13 +57,13 @@ section {
 
     h2 {
         font-size: 3.4rem;
-        color: #233;
+        color: #000000;
         text-align: center;
         margin-bottom: 100px;
     }
     h3 {
         font-size: 1.7rem;
-        color: #233;
+        color: #000000;
         text-align: center;
         margin-bottom: 100px;
     }
@@ -64,12 +72,32 @@ section {
 
 #sobre{
     background-color: #eee;
-    h2 {
-        margin-bottom: 10px;
+    h1 {
+        font-size: 2.8rem;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
     }
-
-    h3{
-       
+    h2 {
+        font-size: 2.4rem;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 2rem;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333333;
+        max-width: 900px;
+        margin: 0 auto 30px;
+        padding: 0 20px;
+        text-align: justify;
     }
 }
 
@@ -96,7 +124,7 @@ table a {
     border-radius: 12px;
     font-weight: bold;
     font-size: 1.3rem;
-    color: #333;
+    color: #000000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     text-decoration: none;
@@ -119,6 +147,23 @@ table td:hover {
     border-radius: 50px;
 }
 
+/* Accordion navigation styles */
+.accordion ul li div a .nav-title {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.accordion ul li div a .nav-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    color: #333333;
+    text-align: center;
+}
+
 /* Section geral */
 #projetos {
     background-color: #eee;
@@ -137,6 +182,7 @@ table td:hover {
 /* Estilo dos cards */
 .projeto-card {
     background: white;
+    color: #333333;
     width: 280px;
     padding: 25px;
     border-radius: 12px;
@@ -191,6 +237,7 @@ table td:hover {
 /* Estilo dos cards */
 .concurso-card {
     background: white;
+    color: #333333;
     width: 280px;
     padding: 25px;
     border-radius: 12px;
@@ -296,6 +343,7 @@ table td:hover {
 /* Estilo dos cards */
 .estagio-card {
     background: white;
+    color: #333333;
     width: 280px;
     padding: 25px;
     border-radius: 12px;
@@ -387,9 +435,10 @@ table td:hover {
 
 /* Section */
 #testemunhos {
-
+    background-color: #dae0e6;
     padding: 60px 0;
     text-align: center;
+    color: #333333;
 }
 
 
@@ -404,6 +453,7 @@ table td:hover {
 /* Card */
 .card-testemunho {
     background: white;
+    color: #333333;
     width: 280px;
     padding: 25px;
     border-radius: 12px;
@@ -418,13 +468,13 @@ table td:hover {
 
 .card-testemunho p {
     font-style: italic;
-    color: #444;
+    color: #333333;
     margin-bottom: 15px;
 }
 
 .card-testemunho h4 {
     margin-top: 10px;
-    color: #0d47a1;
+    color: #003d82;
     font-weight: bold;
 }
 
@@ -452,17 +502,18 @@ table td:hover {
     }
 
     /* Accordion headers */
-    .accordion ul li div a h2 {
-        font-size: 16px; /* smaller */
+    .accordion ul li div a .nav-title {
+        font-size: 1rem; /* smaller */
     }
 
-    .accordion ul li div a p {
-        font-size: 11px; /* smaller text */
+    .accordion ul li div a .nav-subtitle {
+        font-size: 0.8rem; /* smaller text */
     }
 
     /* Card titles */
-    .projeto-card h3,
-    .concurso-card h3,
+    .projeto-card h4,
+    .concurso-card h4,
+    .estagio-card h4,
     .card-testemunho h4 {
         font-size: 1rem; /* smaller */
     }
@@ -472,6 +523,26 @@ table td:hover {
     .concurso-card p,
     .card-testemunho p {
         font-size: 0.85rem; /* slightly smaller */
+    }
+
+    /* Sobre section mobile */
+    #sobre h1 {
+        font-size: 1.8rem;
+    }
+    
+    #sobre h2 {
+        font-size: 1.5rem;
+    }
+    
+    #sobre h3 {
+        font-size: 1.3rem;
+    }
+    
+    #sobre p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 15px;
+        text-align: left;
     }
 
     /* Table links */
@@ -496,10 +567,10 @@ table td:hover {
 footer {
     padding: 10px;
     .about {
-        color: #696868;
+        color: #404040;
         font-style: italic;
     }
     span {
-        color: #333333;
+        color: #000000;
     }
 }
